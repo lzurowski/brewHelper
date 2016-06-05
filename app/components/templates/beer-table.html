@@ -1,0 +1,16 @@
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr class="">
+        <th class="">Nazwa</th>
+        <th class="">Styl</th>
+        <th class="">Data warzenia</th>          
+    </tr>  
+    </thead>
+    <tbody class="">  
+    <tr *ngFor="let beer of beers" (click) = "onClick(beer)" >
+        <td>{{beer.name}}</td>
+        <td>{{beer.style}}</td>
+        <td>{{beer.brewDate}}</td>       
+    </tr> 
+    </tbody>
+</table>   
